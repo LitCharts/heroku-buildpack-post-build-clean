@@ -16,17 +16,12 @@ are necessary for the build, but are not required at runtime. There may
 also be installable build dependencies that are not runtime
 dependencies.
 
-In our case, a complex front-end build involves significant CSS, JS and
-image assets, along with a large installation of node modules, all of
-which are used only for building the production assets, but then remain
-part of the slug.
-
 ## Usage
 
 Add the buildpack to the app:
 
 ```shell
-heroku buildpacks:add https://github.com/opencounter/heroku-buildpack-post-build-clean.git
+heroku buildpacks:add https://github.com/LitCharts/heroku-buildpack-post-build-clean.git
 ```
 
 The post-build-clean buildpack **must** be last in the buildpack order.
